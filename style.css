@@ -7,8 +7,8 @@ html, body {
   font-size: 18px;
 }
 
-body {
-  margin: 20px 0;  
+.heading {
+  width: 500px;
 }
 
 .heading:after {
@@ -125,8 +125,13 @@ hr {
 }
 
 .container {
-  width: 500px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box
 }
 
 @-webkit-keyframes fade-in {
@@ -552,18 +557,8 @@ hr {
     font-size: 15px;
   }
 
-  body {
-    margin: 20px 0;
-    padding: 0 20px;
-  }
-
   h1.title {
     font-size: 50px;
-  }
-
-  .container {
-    width: 280px;
-    margin: 0 auto;
   }
 
   .score-container {
@@ -572,6 +567,7 @@ hr {
 
   .heading {
     margin-bottom: 10px;
+    width: 280px;
   }
 
   .game-container {
